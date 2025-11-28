@@ -310,15 +310,15 @@ a {
 }
 
 .activiteMarseille h2 {
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 .activites {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 4rem 0;
 }
-
 
 .activite {
     display: flex;
@@ -339,6 +339,29 @@ a {
 
 .activite h3 {
     margin: 5%;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    background-color: var(--main-bg-color);
+}
+
+.infoFooter{
+    width: 15rem;
+    height: 10rem;
+    margin-right: 10rem;
+}
+
+.infoFooter h3{
+    margin: 1rem 0;
+}
+
+.infoFooter ul {
+    height: 100%;
+    line-height: 2em;
 }
 
 
