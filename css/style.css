@@ -21,6 +21,10 @@ body {
     justify-content: center;
 }
 
+h2 {
+    font-size: 22px;
+}
+
 header p {
     margin-bottom: 1rem;
 }
@@ -110,22 +114,30 @@ a {
     text-decoration: none;
 }
 
-.filters {
+.filterSection {
     display: flex;
     align-items: center;
     width: 40rem;
-    justify-content: space-between;
     margin: 1rem 0;
 }
 
-.filters h2 {
+.filterSection h2 {
     font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .filter {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height: 2.5rem;
     width: 8rem;
     border: 2px solid rgb(226, 223, 223);
@@ -201,27 +213,30 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.chambres {
+.hotels {
     display: flex;
-    gap: 2rem;
-    justify-content: space-between;
+    gap: 1rem;
     align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
     flex-wrap: wrap;
-}
-
-.chambres a {
-    width: 35%;
-    max-width: 15.5rem;
-}
-
-.chambre {
-    height: 13.5rem;
+    margin: 2rem 0;
     width: 100%;
-    max-width: 15.5rem;
+}
+
+.hotels a {
+    width: 30%;
+}
+
+.hotel h3 {
+    font-size: 16px;
+}
+
+.hotel {
+    height: 11rem;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -230,22 +245,23 @@ a {
     padding: 0.3rem;
 }
 
-.chambre img {
+.hotel img {
     border-radius: 15px 15px 0 0;
-    height: 7rem;
+    height: 6rem;
     width: 100%;
+    object-fit: cover;
 }
 
 .card-contentHebergement {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0.5rem 0 0 1rem;
+    justify-content: end;
+    margin-left: 0.7rem;
     width: 95%;
-    height: 5rem;
+    height: 4rem;
 }
 
-.chambre .card-ratingHebergement {
+.hotel .card-ratingHebergement {
     text-align: left;
     padding: 0 0 0 1rem;
     width: 90%;
@@ -306,11 +322,11 @@ a {
 
 .activiteMarseille {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .activiteMarseille h2 {
-    margin: 4rem 0;
+    margin: 2rem 0 0 0;
 }
 
 .activites {
@@ -323,25 +339,24 @@ a {
 .activite {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 30rem;
-    max-width: 19rem;
-    width: 100%;
     border-radius: 15px;
     box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.274);
 }
 
 .activite img {
-    height: 24rem;
+    height: 26rem;
     width: 18rem;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 
 .activite h3 {
-    margin: 5%;
+    margin: auto 1rem;
 }
 
-footer{
+
+footer {
     display: flex;
     width: 100%;
     height: 15rem;
@@ -349,13 +364,13 @@ footer{
     background-color: var(--main-bg-color);
 }
 
-.infoFooter{
+.infoFooter {
     width: 15rem;
     height: 10rem;
     margin-right: 10rem;
 }
 
-.infoFooter h3{
+.infoFooter h3 {
     margin: 1rem 0;
 }
 
@@ -370,12 +385,25 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hotel {
+        height: 10rem;
+    }
+
+    .hotel img {
+        border-radius: 15px 15px 0 0;
+        height: 5.5rem;
+        width: 100%;
+        object-fit: cover;
     }
 
     .populaires {
@@ -393,13 +421,35 @@ footer{
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    h3 {
         font-size: 14px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /******Activité tab **********/
+    .activite {
+        display: flex;
+        height: 17rem;
+        width: 12.5rem;
+    }
+
+    .activite a {
+        height: 13rem;
+        width: 8rem;
+    }
+
+    .activite img {
+        height: 13rem;
+        width: 100%;
+    }
+
+    .activite h3 {
+        margin: auto 1rem;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */

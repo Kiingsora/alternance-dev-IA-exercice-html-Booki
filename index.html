@@ -37,24 +37,26 @@
         </div>
       </header>
       <main>
-        <section class="filters">
+        <section class="filterSection">
           <h2>Filtres</h2>
-          <button class="filter">
-            <i class="fa-xs fa-solid fa-star fa-money-bill-wave"></i>
-            Économique
-          </button>
-          <button class="filter">
-            <i class="fa-xs fa-solid fa-star fa-person"></i>
-            Familial
-          </button>
-          <button class="filter">
-            <i class="fa-xs fa-solid fa-star fa-heart"></i>
-            Romantique
-          </button>
-          <button class="filter">
-            <i class="fa-xs fa-solid fa-star fa-fire"></i>
-            Nos pépites
-          </button>
+          <div class="filters">
+              <button class="filter">
+                <i class="fa-xs fa-solid fa-star fa-money-bill-wave"></i>
+                Économique
+              </button>
+              <button class="filter">
+                <i class="fa-xs fa-solid fa-star fa-person"></i>
+                Familial
+              </button>
+              <button class="filter">
+                <i class="fa-xs fa-solid fa-star fa-heart"></i>
+                Romantique
+              </button>
+              <button class="filter">
+                <i class="fa-xs fa-solid fa-star fa-fire"></i>
+                Nos pépites
+              </button>
+          </div>
         </section>
         <section class="info">
           <i class="fa-xs fa-solid fa-star fa-circle-info"></i>
@@ -63,15 +65,15 @@
         <div class="hebergements-and-populaires">
           <section class="hebergements">
             <h2>Hébergements à Marseille</h2>
-            <div class="chambres">
+            <div class="hotels">
               <a href="">
-                <article class="chambre">
+                <article class="hotel">
                   <img
                     src="images/hebergements/fred-kleber.jpg"
-                    alt="hôtel du port montrant 2 lit dans une chambre" />
+                    alt="hôtel du port montrant 2 lit dans une hotel" />
                   <div class="card-contentHebergement">
                     <h3>Hôtel du port</h3>
-                    <p>Nuit à partir de 52€</p>
+                    <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
                     <div>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
@@ -85,13 +87,13 @@
                 </article>
               </a>
               <a href="">
-                <article class="chambre">
+                <article class="hotel">
                   <img
                     src="images/hebergements/febrian-zakaria.jpg"
                     alt="Hôtel Chez Amina montrant un lit une table et une fenêtre" />
                   <div class="card-contentHebergement">
                     <h3>Hôtel Chez Amina</h3>
-                    <p>Nuit à partir de 96€</p>
+                    <p class="card-subtitle">Nuit à partir de 96€</p>
                     <div class="card-rating-hebergement">
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
@@ -105,13 +107,13 @@
                 </article>
               </a>
               <a href="">
-                <article class="chambre">
+                <article class="hotel">
                   <img
                     src="images/hebergements/febrian-zakaria2.jpg"
                     alt="Hôtel Les mouettes montrant un lit et un placar avec mirroir" />
                   <div class="card-contentHebergement">
                     <h3>Hôtel Les mouettes</h3>
-                    <p>Nuit à partir de 76€</p>
+                    <p class="card-subtitle">Nuit à partir de 76€</p>
                     <div class="card-rating-hebergement">
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
@@ -125,13 +127,13 @@
                 </article>
               </a>
               <a href="">
-                <article class="chambre">
+                <article class="hotel">
                   <img
                     src="images/hebergements/annie-spratt.jpg"
                     alt="Hôtel De la mer montrant un lit avec 2 coussins bleu et blac et un tableau de la mer" />
                   <div class="card-contentHebergement">
                     <h3>Hôtel De la mer</h3>
-                    <p>Nuit à partir de 46€</p>
+                    <p class="card-subtitle">Nuit à partir de 46€</p>
                     <div class="card-rating-hebergement">
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
@@ -145,13 +147,13 @@
                 </article>
               </a>
               <a href="">
-                <article class="chambre">
+                <article class="hotel">
                   <img
                     src="images/hebergements/marcus-loke.jpg"
-                    alt="Auberge La Canebière montrant un lit supperposé devant une fenêtr. Exactement le type de chambre pour un enfant en bas âge qui excalade tout..." />
+                    alt="Auberge La Canebière montrant un lit supperposé devant une fenêtr. Exactement le type de hotel pour un enfant en bas âge qui excalade tout..." />
                   <div class="card-contentHebergement">
                     <h3>Auberge La Canebière</h3>
-                    <p>Nuit à partir de 25€</p>
+                    <p class="card-subtitle">Nuit à partir de 25€</p>
                     <div class="card-rating-hebergement">
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
@@ -165,13 +167,13 @@
                 </article>
               </a>
               <a href="">
-                <article class="chambre">
+                <article class="hotel">
                   <img
                     src="images/hebergements/nicate-lee.jpg"
                     alt="Auberge Le panier montrant un lit supperposé dans un style bambou et bord de mer" />
                   <div class="card-contentHebergement">
                     <h3>Auberge Le panier</h3>
-                    <p>Nuit à partir de 23€</p>
+                    <p class="card-subtitle">Nuit à partir de 23€</p>
                     <div class="card-rating-hebergement">
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
                       <i class="fa-xs fa-solid fa-star fa-star"></i>
@@ -199,7 +201,7 @@
                 <article class="card">
                   <img
                     src="./images/hebergements/emile-guillemot.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit" />
+                    alt="Image de la hotel d'hôtel montrant un lit" />
                   <div class="card-content">
                     <div class="card-txt">
                       <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -232,11 +234,11 @@
                 <article class="card">
                   <img
                     src="./images/hebergements/aw-creative.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit" />
+                    alt="Image de la hotel d'hôtel montrant un lit" />
                   <div class="card-content">
                     <div class="card-txt">
                       <h3 class="card-title">
-                        Chambres d’hôtes Au cœur de l’eau
+                        hotels d’hôtes Au cœur de l’eau
                       </h3>
                       <p class="card-subtitle">
                         Nuit à partir de 71<span class="euro">€</span>
@@ -267,7 +269,7 @@
                 <article class="card">
                   <img
                     src="./images/hebergements/febrian-zakaria2.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit" />
+                    alt="Image de la hotel d'hôtel montrant un lit" />
                   <div class="card-content">
                     <div class="card-txt">
                       <h3 class="card-title">Hôtel Bleu et Blanc</h3>
